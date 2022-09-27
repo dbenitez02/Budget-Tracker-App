@@ -1,0 +1,53 @@
+import { createContext, useReducer } from "react";
+
+const AppReducer = (state, action) => {
+   switch(action.type) {
+      //Need an action to edit budget
+      case 'ADD_EXPENSE':
+         return {
+            ...state,
+            expenses: [...state.expenses, action.payload],
+         }
+         case 'DELETE_EXPENSE':
+            return {
+               ...state,
+               expenses: state.expenses.filter((expense) => 
+                  expense.id !== action.payload
+               ),
+            }
+         case 'BUDGET_UPDATE':
+            return {
+               ...state,
+               budget: action.payload
+            }
+      default:
+         return state;
+   }
+};
+
+const intialState = {
+   budget: 2000,
+   expenses: [
+      { id: 12, name: 'shopping', cost: 40 },
+      { id: 13, name: 'holiday', cost: 400 },
+      { id: 14, name: 'car', cost: 500 },
+   ]
+};
+
+export const AppContext = createContext();
+
+export const AppProvider = (props) => {
+   const [state, dispatch] = useReducer(AppReducer, intialState);
+
+   return(
+   <AppContext.Provider 
+      value={{
+         budget: state.budget,
+         expenses: state.expenses,
+         dispatch,
+      }}
+   >
+      {props.children}
+   </AppContext.Provider>)
+};
+
