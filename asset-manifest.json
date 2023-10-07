@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Budget-Tracker-App/static/css/main.66b4ecfe.css",
-    "main.js": "/Budget-Tracker-App/static/js/main.d4968741.js",
+    "main.js": "/Budget-Tracker-App/static/js/main.b2940956.js",
     "index.html": "/Budget-Tracker-App/index.html",
     "main.66b4ecfe.css.map": "/Budget-Tracker-App/static/css/main.66b4ecfe.css.map",
-    "main.d4968741.js.map": "/Budget-Tracker-App/static/js/main.d4968741.js.map"
+    "main.b2940956.js.map": "/Budget-Tracker-App/static/js/main.b2940956.js.map"
   },
   "entrypoints": [
     "static/css/main.66b4ecfe.css",
-    "static/js/main.d4968741.js"
+    "static/js/main.b2940956.js"
   ]
 }
