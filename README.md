@@ -1,6 +1,4 @@
-# Click below for a preivew
-
-[Preview](https://dbenitez02.github.io/Budget-Tracker-App/) 
+# [Preview](https://dbenitez02.github.io/Budget-Tracker-App/) 
 
 # Getting Started with Create React App
 
